@@ -12,9 +12,15 @@ export default [
   { ignores: [".pnp.cjs"] },
   {
     rules: {
-      "no-unused-vars": "error",
-      "no-undef": "error",
-      "no-console": "error",
+      "no-unused-vars": [
+        "error",
+        {
+          argsIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          caughtErrorsIgnorePattern: "^_",
+        },
+      ],
+      "no-console": ["error", { allow: ["warn", "error", "info"] }],
     },
   },
 ];
