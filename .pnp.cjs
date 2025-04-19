@@ -35,7 +35,7 @@ const RAW_RUNTIME_STATE =
           ["cron", "npm:3.1.7"],\
           ["eslint", "virtual:b9c6becff45d3f57c45213fbcc70ab886e564411b5cc9d50cee14ea06c1843c6fef5ba486e08962a46debcbacb7fa309eb85831fbaba86fd7ba71bee94930916#npm:9.12.0"],\
           ["eslint-config-prettier", "virtual:b9c6becff45d3f57c45213fbcc70ab886e564411b5cc9d50cee14ea06c1843c6fef5ba486e08962a46debcbacb7fa309eb85831fbaba86fd7ba71bee94930916#npm:9.1.0"],\
-          ["fastify", "npm:5.0.0"],\
+          ["fastify", "npm:5.3.2"],\
           ["globals", "npm:15.10.0"],\
           ["moment-timezone", "npm:0.5.46"],\
           ["nodemon", "npm:3.1.7"],\
@@ -408,12 +408,32 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@fastify/forwarded", [\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/@fastify-forwarded-npm-3.0.0-657913bc00-10c0.zip/node_modules/@fastify/forwarded/",\
+        "packageDependencies": [\
+          ["@fastify/forwarded", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@fastify/merge-json-schemas", [\
       ["npm:0.1.1", {\
         "packageLocation": "../../.yarn/berry/cache/@fastify-merge-json-schemas-npm-0.1.1-12ae828277-10c0.zip/node_modules/@fastify/merge-json-schemas/",\
         "packageDependencies": [\
           ["@fastify/merge-json-schemas", "npm:0.1.1"],\
           ["fast-deep-equal", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fastify/proxy-addr", [\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/@fastify-proxy-addr-npm-5.0.0-02358a2d1a-10c0.zip/node_modules/@fastify/proxy-addr/",\
+        "packageDependencies": [\
+          ["@fastify/proxy-addr", "npm:5.0.0"],\
+          ["@fastify/forwarded", "npm:3.0.0"],\
+          ["ipaddr.js", "npm:2.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1722,23 +1742,23 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["fastify", [\
-      ["npm:5.0.0", {\
-        "packageLocation": "../../.yarn/berry/cache/fastify-npm-5.0.0-068fe29859-10c0.zip/node_modules/fastify/",\
+      ["npm:5.3.2", {\
+        "packageLocation": "../../.yarn/berry/cache/fastify-npm-5.3.2-20021eb301-10c0.zip/node_modules/fastify/",\
         "packageDependencies": [\
-          ["fastify", "npm:5.0.0"],\
+          ["fastify", "npm:5.3.2"],\
           ["@fastify/ajv-compiler", "npm:4.0.1"],\
           ["@fastify/error", "npm:4.0.0"],\
           ["@fastify/fast-json-stringify-compiler", "npm:5.0.1"],\
+          ["@fastify/proxy-addr", "npm:5.0.0"],\
           ["abstract-logging", "npm:2.0.1"],\
           ["avvio", "npm:9.0.0"],\
           ["fast-json-stringify", "npm:6.0.0"],\
           ["find-my-way", "npm:9.1.0"],\
           ["light-my-request", "npm:6.1.0"],\
           ["pino", "npm:9.4.0"],\
-          ["process-warning", "npm:4.0.0"],\
-          ["proxy-addr", "npm:2.0.7"],\
+          ["process-warning", "npm:5.0.0"],\
           ["rfdc", "npm:1.4.1"],\
-          ["secure-json-parse", "npm:2.7.0"],\
+          ["secure-json-parse", "npm:4.0.0"],\
           ["semver", "npm:7.6.3"],\
           ["toad-cache", "npm:3.7.0"]\
         ],\
@@ -1859,15 +1879,6 @@ const RAW_RUNTIME_STATE =
           ["asynckit", "npm:0.4.0"],\
           ["combined-stream", "npm:1.0.8"],\
           ["mime-types", "npm:2.1.35"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["forwarded", [\
-      ["npm:0.2.0", {\
-        "packageLocation": "../../.yarn/berry/cache/forwarded-npm-0.2.0-6473dabe35-10c0.zip/node_modules/forwarded/",\
-        "packageDependencies": [\
-          ["forwarded", "npm:0.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2102,10 +2113,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ipaddr.js", [\
-      ["npm:1.9.1", {\
-        "packageLocation": "../../.yarn/berry/cache/ipaddr.js-npm-1.9.1-19ae7878b4-10c0.zip/node_modules/ipaddr.js/",\
+      ["npm:2.2.0", {\
+        "packageLocation": "../../.yarn/berry/cache/ipaddr.js-npm-2.2.0-e289422d83-10c0.zip/node_modules/ipaddr.js/",\
         "packageDependencies": [\
-          ["ipaddr.js", "npm:1.9.1"]\
+          ["ipaddr.js", "npm:2.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2331,7 +2342,7 @@ const RAW_RUNTIME_STATE =
           ["cron", "npm:3.1.7"],\
           ["eslint", "virtual:b9c6becff45d3f57c45213fbcc70ab886e564411b5cc9d50cee14ea06c1843c6fef5ba486e08962a46debcbacb7fa309eb85831fbaba86fd7ba71bee94930916#npm:9.12.0"],\
           ["eslint-config-prettier", "virtual:b9c6becff45d3f57c45213fbcc70ab886e564411b5cc9d50cee14ea06c1843c6fef5ba486e08962a46debcbacb7fa309eb85831fbaba86fd7ba71bee94930916#npm:9.1.0"],\
-          ["fastify", "npm:5.0.0"],\
+          ["fastify", "npm:5.3.2"],\
           ["globals", "npm:15.10.0"],\
           ["moment-timezone", "npm:0.5.46"],\
           ["nodemon", "npm:3.1.7"],\
@@ -2866,6 +2877,13 @@ const RAW_RUNTIME_STATE =
           ["process-warning", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:5.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/process-warning-npm-5.0.0-7999058ecd-10c0.zip/node_modules/process-warning/",\
+        "packageDependencies": [\
+          ["process-warning", "npm:5.0.0"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["promise-retry", [\
@@ -2875,17 +2893,6 @@ const RAW_RUNTIME_STATE =
           ["promise-retry", "npm:2.0.1"],\
           ["err-code", "npm:2.0.3"],\
           ["retry", "npm:0.12.0"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["proxy-addr", [\
-      ["npm:2.0.7", {\
-        "packageLocation": "../../.yarn/berry/cache/proxy-addr-npm-2.0.7-dae6552872-10c0.zip/node_modules/proxy-addr/",\
-        "packageDependencies": [\
-          ["proxy-addr", "npm:2.0.7"],\
-          ["forwarded", "npm:0.2.0"],\
-          ["ipaddr.js", "npm:1.9.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3088,10 +3095,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["secure-json-parse", [\
-      ["npm:2.7.0", {\
-        "packageLocation": "../../.yarn/berry/cache/secure-json-parse-npm-2.7.0-d5b89b0a3e-10c0.zip/node_modules/secure-json-parse/",\
+      ["npm:4.0.0", {\
+        "packageLocation": "../../.yarn/berry/cache/secure-json-parse-npm-4.0.0-5f46627578-10c0.zip/node_modules/secure-json-parse/",\
         "packageDependencies": [\
-          ["secure-json-parse", "npm:2.7.0"]\
+          ["secure-json-parse", "npm:4.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
